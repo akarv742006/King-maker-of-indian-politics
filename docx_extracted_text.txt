@@ -1,0 +1,1671 @@
+Election of India — Complete Game Development Blueprint 🇮🇳
+
+Project vision · Real-world political simulation · Web + Android · Free-first development
+
+Akash, for your Election of India game, the goal is to create more than an election simulator. It should feel like a living political world where players can create parties, contest elections, build alliances, become Chief Minister or Prime Minister, participate in Parliament, interact through a social-media platform, and respond to changing political events.
+
+The application should have a modern light-theme UI, like a combination of a political strategy game, Instagram, a parliamentary simulator, a news app, and a multiplayer nation-building game.
+
+appadvice
+
+Political social network
+
+Parliament and government
+
+1. The complete game story
+
+Title: Election of India
+
+Genre: Multiplayer political strategy, democracy simulation, role-playing and nation management.
+
+Core idea: Every player begins as an ordinary citizen in a simulated India. Through political activity, party creation, elections, public engagement, alliances and governance, players can progress into leadership roles. Other players influence the outcome, so no player is guaranteed political power.
+
+The player's journey
+
+Chapter 1 — Enter the Republic
+
+Create an account, select a name, customize a profile, choose a state and constituency, and enter the political world.
+
+Chapter 2 — Build a Political Identity
+
+Join an existing party or create a new one with a name, symbol, manifesto, constitution, ideology description and leadership structure.
+
+Chapter 3 — Win Public Support
+
+Publish policies, debate other players, attend simulated rallies, recruit party members, answer public questions and build a reputation.
+
+Chapter 4 — Contest the Election
+
+Nominate candidates, select constituencies, set campaign budgets, form alliances and compete in constituency-level elections.
+
+Chapter 5 — Form the Government
+
+Negotiate coalitions, nominate leaders, distribute portfolios, pass a floor test and manage a government with a defined term.
+
+Chapter 6 — Govern the Nation
+
+Introduce bills, debate budgets, manage public services, respond to crises, face opposition questions and maintain public trust.
+
+Chapter 7 — Face the Next Election
+
+Your decisions affect public satisfaction, party reputation, economic indicators and future election results. The world continues even when one player logs out.
+
+The key design principle is that the world persists independently of any one player. Elections, parliamentary sessions, party membership, news, government terms and multiplayer activity must be synchronized through a shared backend.
+
+2. Full feature requirements
+
+These are the major systems the game should include. Build them as connected modules rather than separate demo pages.
+
+A. India map and constituency system
+
+Core feature
+
+Interactive India map with states, districts and constituencies.
+
+State Assembly and Lok Sabha election modes.
+
+Constituency profiles, candidate lists, party affiliations and election history.
+
+Live simulated results, vote-share charts and seat-count animations.
+
+State-level and national-level dashboards.
+
+Zoom, search, filters and mobile-friendly map controls.
+
+B. Create your own political party
+
+Core feature
+
+Custom party name, abbreviation, logo, colours and symbol.
+
+Party constitution, manifesto and policy positions.
+
+Founder, president, general secretary, treasurer and state leaders.
+
+Membership applications, invitations and internal elections.
+
+Candidate selection, party rules, member permissions and resignations.
+
+Alliances, mergers, splits, defections and coalition agreements.
+
+Party bank balance, donations within game rules and campaign budgets.
+
+Duplicate-name checks and admin moderation.
+
+C. DeshConnect — the in-game social network
+
+Posts, photos, short videos, stories and comments.
+
+Likes, reposts, bookmarks, polls and verified in-game accounts.
+
+Party pages, candidate profiles and government announcements.
+
+Following, followers, hashtags, trending topics and notifications.
+
+Public debates, constituency discussions and live Q&A.
+
+News links and community reports.
+
+Reporting, blocking, anti-spam controls and content moderation.
+
+Use an original social-network design rather than copying Instagram's exact branding or interface.
+
+D. Parliament and legislative simulation
+
+Lok Sabha, Rajya Sabha and state legislative assembly modules.
+
+MP and MLA profiles, constituencies and party affiliations.
+
+Parliamentary sessions, questions, motions and debates.
+
+Introduce bills, amend clauses, discuss budgets and conduct votes.
+
+Bill statuses: Draft → Introduced → Debate → Voting → Passed or Rejected.
+
+Speaker, opposition leader, whips and committee roles.
+
+Attendance, voting records, confidence motions and floor tests.
+
+Simulated parliamentary chat and session transcripts.
+
+Distinguish game mechanics from actual constitutional procedure; make house rules configurable and document simplified rules.
+
+E. Government formation and governance
+
+Single-largest-party recognition and configurable majority thresholds.
+
+Coalition negotiations, support agreements and withdrawal of support.
+
+Government Formation Request posted to public chat.
+
+Chief Minister, Prime Minister and ministerial portfolio allocation.
+
+Governor/President roles within the chosen simulation rules.
+
+Cabinet meetings, policies, public expenditure and annual budgets.
+
+Floor-test deadlines, confidence votes, resignations and caretaker governments.
+
+Government approval, service delivery, fiscal health and public satisfaction.
+
+F. Living world and current affairs
+
+Dated news feed with source links and correction history.
+
+Real-world mode and fictional simulation mode.
+
+State elections, national elections, policy announcements and court rulings as verified event cards.
+
+Economic changes, floods, heatwaves, infrastructure projects and other public events.
+
+In-game consequences generated by configurable rules.
+
+AI-assisted summaries with links to original reporting.
+
+Admin controls to approve, correct or remove events.
+
+Historical timeline showing what changed and when.
+
+Important: Real-world news must not automatically become a proven in-game fact or change a player's reputation without validation. Separate reported claims, confirmed events and fictional scenarios.
+
+G. Campaigns and elections
+
+Candidate nominations and party primaries.
+
+Campaign calendar, rallies, debates, policy releases and volunteer activity.
+
+Campaign funds, action points, travel and media resources.
+
+Constituency-specific simulated voter preferences.
+
+Turn-based and scheduled election modes.
+
+Secret ballot simulation, counting phases and result verification.
+
+Vote share, turnout, NOTA where applicable, winning margin and seat distribution.
+
+Alliances, seat-sharing negotiations, by-elections and recounts.
+
+H. Multiplayer and progression
+
+Friends, private rooms, public game worlds and invitations.
+
+Real-time chat, direct messages and party group chat.
+
+Up to 30 simultaneous players as an initial testing target.
+
+Leaderboards for elected offices, party growth and governance outcomes.
+
+XP, achievements, badges, missions and seasonal campaigns.
+
+Spectator mode, reconnect support and server-side turn processing.
+
+Player reports, mute/block, moderator actions and appeal workflow.
+
+3. Additional systems needed for a believable simulation
+
+System
+
+What it should calculate
+
+Public opinion
+
+Approval, satisfaction, trust and issue-specific sentiment
+
+Economy
+
+Revenue, expenditure, inflation, employment and debt
+
+Public services
+
+Education, health, transport, water and infrastructure indicators
+
+Political reputation
+
+Debate participation, leadership actions and verified game achievements
+
+Party management
+
+Membership, funds, organisation strength and internal voting
+
+Media
+
+Press briefings, reports, interviews, corrections and public discussions
+
+Law and institutions
+
+Configurable rules, court challenges, oversight and accountability
+
+AI citizens
+
+Simulated constituent questions, preferences and reactions
+
+World clock
+
+Election dates, sessions, deadlines and policy effects
+
+Audit system
+
+History of votes, money transfers, role changes and administrative actions
+
+The economic and public-opinion systems should use transparent game formulas. Players must be able to see why a policy changed a metric rather than being given unexplained AI-generated outcomes.
+
+4. Tools and software — free-first architecture
+
+My recommendation is to build the first release as a responsive web application/PWA, then package it for Android. The social network, government dashboards, account system and persistent multiplayer world fit a web application particularly well.
+
+Recommended technology stack
+
+Frontend — React + TypeScript + Vite
+
+Build the application screens, dashboards, social feed, election map and reusable components.
+
+React
+
+·
+
+Vite
+
+UI/UX — Tailwind CSS + shadcn/ui
+
+Consistent spacing, typography, forms, tables, navigation, dialogs and light-theme components.
+
+Tailwind CSS
+
+·
+
+shadcn/ui
+
+Backend — Supabase
+
+PostgreSQL database, authentication, file storage, real-time updates and server-side functions.
+
+Supabase
+
+·
+
+Documentation
+
+Local development — Docker Desktop + Docker Compose
+
+Run the frontend, optional backend services, database and test dependencies in reproducible containers.
+
+Docker Desktop
+
+·
+
+Compose
+
+Source control — Git + GitHub
+
+Version history, issues, collaboration, code reviews and automated builds.
+
+GitHub
+
+Web hosting — Cloudflare Pages or Vercel
+
+Deploy the frontend from GitHub with HTTPS and automatic deployments.
+
+Cloudflare Pages
+
+·
+
+Vercel
+
+Mobile packaging — Capacitor
+
+Reuse the responsive web application and package it as an Android application, with native integrations where required.
+
+Capacitor
+
+Godot is another free, open-source option for a more game-like 2D/3D experience and supports web and mobile exports.
+
+Godot Engine
+
++1
+
+For your first release, React is the simpler fit for an application-heavy interface; a Godot client can be considered later if you need a genuinely 3D world.
+
+Free plan reality check
+
+Free to build and test
+
+React, TypeScript, Git, GitHub, Docker Desktop for personal/education use and Godot have free options. Docker Desktop's licensing conditions depend on the type and size of the organisation.
+
+Docker Docs
+
++2
+
+Free hosted prototype
+
+Supabase's free plan currently lists two active free projects, 500 MB database storage per project, 1 GB file storage and quotas for authentication and real-time traffic. Projects can be paused under free-plan conditions.
+
+Supabase Docs
+
++1
+
+Free does not mean unlimited
+
+Cloudflare Pages has published free-plan build and file limits, while Vercel's Hobby plan is intended for personal, non-commercial use. Check current terms before launching a public commercial game.
+
+Cloudflare Pages docs
+
++2
+
+Production costs
+
+AI inference, news services, file storage, email delivery, domain registration, large-scale database traffic and persistent multiplayer hosting may eventually require paid services. Design a low-cost fallback for each optional feature.
+
+A key distinction: Docker makes your application portable; it does not provide free cloud hosting by itself. You can develop locally with Docker and deploy your frontend and backend separately. Keep a documented production deployment path rather than assuming your laptop will run the game 24/7.
+
+5. UI/UX design system — make it look like a real released game
+
+The application must not look like a college project dashboard or a generic admin template. It should look like a polished, production-ready political simulation platform.
+
+500x
+
+Desktop dashboard
+
+Mobile application
+
+Visual specifications
+
+Element
+
+Requirement
+
+Theme
+
+Light mode by default
+
+Page background
+
+Soft off-white, #F7F9FC
+
+Primary colour
+
+Deep navy, #173B67
+
+Accent colours
+
+Saffron #F59E0B, green #16845B
+
+Cards
+
+White, subtle borders and restrained shadows
+
+Typography
+
+Inter or another readable, licensed font
+
+Corners
+
+12–18 px radius
+
+Layout
+
+Responsive desktop sidebar and mobile bottom navigation
+
+Maps
+
+Detailed India map with clear constituency boundaries
+
+Charts
+
+Accessible, readable election and economy visualizations
+
+Animation
+
+Smooth transitions, result counters and ballot-counting effects
+
+Accessibility
+
+Keyboard navigation, adequate contrast and scalable text
+
+Use saffron and green as interface accents, not as a default endorsement of any party. Each player-created party should be able to choose its own identity.
+
+Main application navigation
+
+ELECTION OF INDIA
+
+Your republic. Your decisions.
+
+Home Dashboard
+
+India Map & Elections
+
+Parties & Alliances
+
+DeshConnect
+
+Parliament
+
+Government
+
+News & Events
+
+Rankings & Achievements
+
+Illustrative navigation preview — implement every item as a working feature, not a decorative button.
+
+Screens that must be designed
+
+Splash screen, onboarding and login/register.
+
+Choose a game world, state and constituency.
+
+Player profile and political career.
+
+Main dashboard with live game status and notifications.
+
+India map and constituency explorer.
+
+Create party wizard and party management dashboard.
+
+Candidate selection and election campaign room.
+
+Election results, counting animation and analytics.
+
+Social feed, stories, comments, profiles and direct messages.
+
+Parliament chamber, bills, voting and debates.
+
+Government formation, cabinet and floor test.
+
+Economy, policies, public services and crisis management.
+
+News, events and historical timeline.
+
+Multiplayer lobby, friends and chat.
+
+Admin dashboard, moderation and world settings.
+
+6. Backend architecture and database synchronization
+
+The most important engineering rule is that the server owns the game state. Do not store election results, party membership, government roles or balances only in a browser's local storage.
+
+Diagram options
+
+Required database tables
+
+Table
+
+Purpose
+
+profiles
+
+Player identity, settings and public profile
+
+game_worlds
+
+World configuration, current phase and clock
+
+states
+
+State metadata and game rules
+
+constituencies
+
+Constituency boundaries and seat information
+
+parties
+
+Party name, symbol, manifesto, founder and treasury
+
+party_members
+
+Membership, position and permissions
+
+candidates
+
+Nominations, eligibility and constituency assignments
+
+alliances
+
+Alliance members, terms and seat-sharing
+
+elections
+
+Election schedules, phases and rule configuration
+
+votes
+
+Secure simulated ballots and eligibility checks
+
+results
+
+Verified vote totals, turnout and seat outcomes
+
+governments
+
+Formation status, leaders and term
+
+cabinet_members
+
+Ministerial roles and appointments
+
+bills
+
+Legislative drafts, sponsors and status
+
+bill_votes
+
+Recorded parliamentary voting
+
+posts
+
+DeshConnect posts, polls and media references
+
+comments
+
+Social interactions
+
+follows
+
+Social graph
+
+messages
+
+Private and group conversations
+
+notifications
+
+Persistent user notifications
+
+news_events
+
+Dated, sourced events and corrections
+
+game_metrics
+
+Public satisfaction and economic indicators
+
+transactions
+
+Auditable in-game currency movements
+
+audit_logs
+
+Administrative and high-impact game actions
+
+reports
+
+Moderation reports and decisions
+
+Use foreign keys, indexes, database constraints and migrations. Do not create one huge table for everything.
+
+Synchronization requirements
+
+Party creation must appear to all authorized players without refreshing the application.
+
+New posts, comments and messages should appear in real time.
+
+Elections must use server-controlled phases and deadlines.
+
+Results must be calculated from validated ballots, not client-submitted totals.
+
+Government formation must check configured majority and eligibility rules on the server.
+
+Floor-test deadlines and election transitions must continue when the initiating player is offline.
+
+Reconnecting players must receive the current authoritative state.
+
+Prevent duplicate votes, repeated rewards, duplicate transactions and stale updates.
+
+Use database transactions for critical operations.
+
+Implement role-based access control and PostgreSQL Row Level Security.
+
+Keep service-role keys and other secrets out of frontend code.
+
+For the first 30-player prototype, Supabase Realtime and PostgreSQL are a reasonable starting point. Load-test actual concurrent users, message volume and database queries before claiming that the game supports a particular number of players.
+
+7. Docker and project folder structure
+
+Use a single Git repository with clear separation between the web client, server functions, database and development infrastructure.
+
+election-of-india/
+
+├── apps/
+
+│   └── web/
+
+│       ├── src/
+
+│       │   ├── components/
+
+│       │   ├── pages/
+
+│       │   ├── layouts/
+
+│       │   ├── features/
+
+│       │   │   ├── auth/
+
+│       │   │   ├── dashboard/
+
+│       │   │   ├── india-map/
+
+│       │   │   ├── parties/
+
+│       │   │   ├── elections/
+
+│       │   │   ├── deshconnect/
+
+│       │   │   ├── parliament/
+
+│       │   │   └── government/
+
+│       │   ├── services/
+
+│       │   ├── hooks/
+
+│       │   └── styles/
+
+│       └── public/
+
+├── supabase/
+
+│   ├── migrations/
+
+│   ├── functions/
+
+│   ├── seed.sql
+
+│   └── config.toml
+
+├── packages/
+
+│   ├── shared-types/
+
+│   └── game-rules/
+
+├── tests/
+
+├── docker/
+
+├── Dockerfile
+
+├── docker-compose.yml
+
+├── .env.example
+
+├── .gitignore
+
+└── README.md
+
+Use Docker Compose for reproducible local development. For example, the web frontend can run in a container while the Supabase CLI manages a local Supabase stack. Keep cloud credentials in environment variables, never commit .env files, and document how to start and stop the environment.
+
+Supabase's managed services can be used for the first deployment, while its local development tooling and Docker-based environment support testing. Avoid maintaining two competing databases unless you have a concrete migration or self-hosting requirement.
+
+8. Future Android version
+
+The mobile version should be planned from day one, not added after the desktop UI is complete.
+
+Phase 1 — Responsive web application
+
+Build the complete game in React, with desktop, tablet and phone layouts. Support installable PWA behaviour where practical.
+
+Phase 2 — Android packaging
+
+Use Capacitor to package the same web application. Add push notifications, deep links, native sharing and secure platform integrations where needed.
+
+Phase 3 — Mobile-specific gameplay
+
+Add touch-friendly map controls, compact election charts, mobile chat, offline read-only caching and reconnect handling. Test on real Android devices.
+
+Use the same backend, user accounts, parties, election results and game rules for web and Android. A player should be able to log in on either device and continue the same game.
+
+9. Master development prompt
+
+Copy the following prompt into Antigravity or another coding agent that can create and edit a project repository. It is written to request an actual working application, not just a design concept.
+
+MASTER PROJECT PROMPT: ELECTION OF INDIA
+
+MASTER PROJECT PROMPT: ELECTION OF INDIA
+
+1. PROJECT OBJECTIVE
+
+Build a complete, production-oriented political strategy and democracy simulation game named Election of India.
+
+This is a multiplayer political world and a responsive application, not a static landing page, not a dashboard-only template, and not a collection of disconnected mock screens.
+
+Players should be able to create accounts, enter a persistent game world, create political parties, recruit members, nominate candidates, contest simulated elections, form alliances, negotiate government formation, participate in parliamentary proceedings, interact on an in-game social network, govern, and experience evolving political events.
+
+The initial release must target a small multiplayer community of approximately 30 simultaneous players for testing.
+
+All players must share a synchronized backend. The game must remain functional when users log out, close their browser, or switch devices.
+
+2. REQUIRED TECHNOLOGY STACK
+
+Use the following stack:
+
+React
+
+TypeScript
+
+Vite
+
+Tailwind CSS
+
+shadcn/ui
+
+Lucide icons
+
+Supabase Authentication
+
+PostgreSQL through Supabase
+
+Supabase Realtime
+
+Supabase Storage
+
+Supabase Edge Functions where suitable
+
+Git and GitHub
+
+Docker and Docker Compose for local development
+
+Cloudflare Pages or a suitable Vercel deployment for the frontend
+
+Capacitor for a future Android application
+
+A suitable interactive India map library with properly licensed geographic data
+
+Use maintained, compatible package versions. Generate a lockfile and document setup commands.
+
+Do not require paid APIs for essential gameplay. Use local deterministic game logic when an optional AI or external service is unavailable.
+
+3. VISUAL IDENTITY AND DESIGN SYSTEM
+
+The UI/UX is one of the highest priorities.
+
+Create an original, polished, modern political strategy application with a premium production-quality appearance.
+
+Use LIGHT THEME by default.
+
+Design tokens:
+
+Page background: #F7F9FC
+
+Primary navy: #173B67
+
+Saffron accent: #F59E0B
+
+Green accent: #16845B
+
+Card background: #FFFFFF
+
+Main text: #172033
+
+Secondary text: #687386
+
+Border: #E5EAF1
+
+Use readable typography, generous whitespace, consistent 8-point spacing, subtle shadows, 12–18px rounded cards, refined icons, meaningful empty states, skeleton loading, polished dialogs and responsive charts.
+
+Do not use excessive gradients, giant headings, oversized cards, neon colours, default generic AI-generated dashboard styling, or unnecessary decorative elements.
+
+Use party colours only where appropriate and let user-created parties choose their own branding.
+
+Build a reusable design system containing buttons, form controls, tables, cards, charts, dialogs, navigation, toasts, badges, tabs, dropdowns, tooltips, and confirmation screens.
+
+Add loading, success, error, empty, offline, reconnecting and permission-denied states.
+
+All controls must have functional behaviour.
+
+4. APPLICATION NAVIGATION
+
+Desktop navigation:
+
+Home
+
+India Map
+
+Elections
+
+Parties
+
+Alliances
+
+DeshConnect
+
+Parliament
+
+Government
+
+Economy
+
+News and Events
+
+Messages
+
+Notifications
+
+Rankings
+
+Profile
+
+Settings
+
+Include a compact sidebar, searchable navigation, a notification centre, a player profile menu and a game-world status indicator.
+
+Mobile navigation:
+
+Home
+
+Map
+
+Create/Post
+
+Social
+
+Profile
+
+Move secondary destinations into an accessible menu.
+
+Use responsive layouts rather than shrinking the desktop screen into a phone.
+
+5. AUTHENTICATION AND PLAYER PROFILES
+
+Implement registration, login, logout, session restoration, password recovery and account settings.
+
+Create a player profile containing:
+
+Display name and unique username
+
+Avatar and biography
+
+Selected game world
+
+State and constituency
+
+Current party and political role
+
+Achievements and game statistics
+
+Account privacy settings
+
+Notification preferences
+
+Blocked users
+
+Never expose passwords, authentication tokens or private account data.
+
+Validate all input on both client and server.
+
+Allow guest/demo mode using a clearly isolated demo world with synthetic data.
+
+6. PERSISTENT GAME WORLD
+
+Create a persistent simulation world with a server-controlled game clock, election phases, event scheduling, government terms and activity history.
+
+Support:
+
+Public game worlds
+
+Private rooms
+
+Invitations
+
+Player presence
+
+Reconnection
+
+Server-authoritative actions
+
+Scheduled game events
+
+Configurable election cycles
+
+A development reset function restricted to administrators
+
+Use deterministic game rules for reproducible tests.
+
+No critical game state should depend exclusively on browser local storage.
+
+7. INDIA MAP AND CONSTITUENCIES
+
+Create an interactive, visually detailed India map.
+
+Support:
+
+National, state, district and constituency exploration
+
+Zoom, pan, search and hover details
+
+State Assembly and Lok Sabha simulation modes
+
+Constituency profiles
+
+Candidate lists
+
+Party affiliations
+
+Previous simulated results
+
+Current election status
+
+Vote-share charts
+
+Seat distribution
+
+Result counting animations
+
+Use legitimate geographic data and respect its licence.
+
+Do not draw fictional constituency boundaries while claiming that they are official.
+
+If complete geographic data is unavailable, provide a clearly labelled demonstration dataset and a working state/constituency explorer until verified data is imported.
+
+Keep political data separate from geographic geometry.
+
+8. POLITICAL PARTY CREATION
+
+Allow an authenticated player to create a new party.
+
+Create a multi-step wizard:
+
+Step 1: Party name and abbreviation.
+
+Step 2: Logo, colour palette and proposed symbol.
+
+Step 3: Party constitution and leadership rules.
+
+Step 4: Manifesto and policy positions.
+
+Step 5: Founding members and membership rules.
+
+Step 6: Review and submit.
+
+Implement:
+
+Duplicate-name validation
+
+Party membership requests
+
+Member invitations
+
+Membership approval and removal
+
+Party president and secretary roles
+
+Treasurer permissions
+
+State-level organisational units
+
+Internal elections
+
+Candidate nomination procedures
+
+Party treasury
+
+Auditable in-game donations
+
+Alliance proposals
+
+Seat-sharing agreements
+
+Party mergers and splits
+
+Defections and resignations
+
+Party suspension and appeals
+
+The party founder must not automatically receive every permanent administrative power. Support configurable constitutions and transfer of leadership.
+
+Party creation, treasury operations and membership changes must be validated server-side.
+
+9. DESHCONNECT SOCIAL NETWORK
+
+Build an original in-game social media platform inspired by familiar social applications without copying their branding or exact interface.
+
+Implement:
+
+Text and image posts
+
+Short video references or supported uploads
+
+Stories with expiry rules
+
+Likes and reactions
+
+Comments and replies
+
+Reposts and bookmarks
+
+Polls
+
+Hashtags
+
+Search
+
+Following and followers
+
+Party pages
+
+Candidate pages
+
+Government accounts
+
+Direct messages
+
+Group chats
+
+Notifications
+
+Trending topics
+
+Public debates
+
+Live question-and-answer sessions
+
+Use pagination and efficient database queries.
+
+Store media in managed object storage with file-size limits and validation.
+
+Use real-time updates for messages and selected feed activity.
+
+Implement blocking, reporting, rate limiting, spam controls and moderation.
+
+Do not expose private messages publicly.
+
+10. ELECTION ENGINE
+
+Support configurable elections with the following phases:
+
+Election announced
+
+Nomination period
+
+Candidate verification
+
+Campaign period
+
+Debate and campaign events
+
+Voting period
+
+Poll closing
+
+Vote counting
+
+Results verification
+
+Final result publication
+
+Implement candidate eligibility checks, constituency assignment, party nominations, independent candidates, campaign budgets, alliance agreements and configurable election rules.
+
+For simulated voting, enforce one valid ballot per eligible simulated voter per election.
+
+Store ballots securely, prevent duplicate submissions, and keep counting and result publication under server control.
+
+Use a documented and configurable voting model, including first-past-the-post as an option.
+
+Calculate turnout, votes, vote share, victory margin and seats won from validated data.
+
+Support recounts, disputed results and administrator-reviewed election corrections.
+
+Never let a client directly submit its preferred final seat count or overwrite an election result.
+
+11. GOVERNMENT FORMATION
+
+Implement a government formation workflow.
+
+Include:
+
+Election result summary
+
+Majority threshold
+
+Single-largest-party status
+
+Alliance seat totals
+
+Coalition negotiations
+
+Support agreements
+
+Government Formation Request
+
+Public discussion thread
+
+Leader nomination
+
+Cabinet allocation
+
+Confidence vote
+
+Floor-test deadline
+
+Support withdrawal
+
+Resignation
+
+Caretaker administration
+
+Opposition leadership
+
+Government term
+
+Every government formation action must be recorded in an audit log.
+
+Use configurable simulation rules rather than assuming one simplified workflow applies to every state or national scenario.
+
+A deadline must be processed by the server even if the responsible player is offline.
+
+12. PARLIAMENT AND STATE ASSEMBLIES
+
+Create a parliamentary simulation with:
+
+House dashboard
+
+Member directory
+
+Party seat distribution
+
+Speaker and presiding officer
+
+Question hour
+
+Motions
+
+Bills
+
+Amendments
+
+Committee review
+
+Budget discussions
+
+Debates
+
+Voting
+
+Attendance
+
+Opposition questions
+
+Parliamentary transcripts
+
+Confidence motions
+
+Floor tests
+
+Bill workflow:
+
+Draft → Submitted → Introduced → Debate → Voting → Passed or Rejected.
+
+Add further states where required by the chosen simulation rules.
+
+Prevent unauthorised users from modifying parliamentary records.
+
+Display each bill's sponsor, status, version, debate history and voting record.
+
+Provide accessible controls for voting and reviewing bill clauses.
+
+13. GOVERNMENT AND PUBLIC POLICY
+
+Build dashboards for:
+
+Prime Minister or Chief Minister
+
+Ministers
+
+Opposition leaders
+
+Legislators
+
+Citizens
+
+Support policy proposals, budgets, cabinet meetings, public-service spending, transport, health, education, water, employment, infrastructure and disaster response.
+
+Create a transparent simulation engine with configurable effects.
+
+Track:
+
+Public approval
+
+Service quality
+
+Economic health
+
+Government revenue
+
+Expenditure
+
+Public debt
+
+Employment indicators
+
+Infrastructure progress
+
+Policy outcomes
+
+Explain why a metric changes.
+
+Do not present simplified game metrics as actual economic forecasts or official public statistics.
+
+14. CURRENT AFFAIRS AND LIVING WORLD
+
+Build an event system that can represent current and historical real-world events without confusing them with simulated game events.
+
+Each event should include:
+
+Title
+
+Description
+
+Event category
+
+Publication time
+
+Event date, if known
+
+Source URL
+
+Publisher
+
+Verification status
+
+Affected location
+
+Associated simulation rules
+
+Last updated time
+
+Correction history
+
+Administrator review status
+
+Provide an admin-curated event importer and manual entry workflow.
+
+Do not rely on unapproved scraping or assume that every news headline is verified.
+
+Do not allow AI-generated text to create an official fact without appropriate review.
+
+Keep reported allegations distinct from established findings.
+
+Use clearly labelled fictional scenarios when current verified information is unavailable.
+
+Let administrators disable real-world event imports without breaking the game.
+
+15. AI CITIZENS AND OPTIONAL AI FEATURES
+
+Create an optional AI adapter for:
+
+Simulated citizen questions
+
+Policy brief summaries
+
+Debate summaries
+
+Manifesto comparisons
+
+Draft speeches
+
+News summaries
+
+Suggested fictional events
+
+Use a provider interface so different models can be configured later.
+
+Never require a paid model for basic gameplay.
+
+Provide deterministic template-based fallback behaviour when no model key exists.
+
+Do not let AI make unreviewed changes to ballots, party membership, official results, financial transactions or government roles.
+
+Keep API keys on the server.
+
+16. MULTIPLAYER AND CHAT
+
+Support an initial testing target of 30 simultaneous players.
+
+Implement:
+
+Public and private game rooms
+
+Friends
+
+Invitations
+
+Presence indicators
+
+Party chat
+
+Direct messages
+
+Public discussion rooms
+
+Notifications
+
+Reconnection
+
+Server-authoritative game actions
+
+Message pagination
+
+Rate limiting
+
+Moderation tools
+
+Do not promise unlimited concurrency. Add a repeatable load-testing suite and document the tested limits.
+
+17. DATABASE AND SYNCHRONIZATION
+
+Use PostgreSQL through Supabase.
+
+Create migrations, seed data, foreign keys, indexes, constraints and row-level security policies.
+
+Create appropriately related tables for:
+
+profiles, game_worlds, states, constituencies, parties, party_members, candidates, alliances, elections, ballots, results, governments, cabinet_members, bills, bill_votes, posts, comments, follows, messages, notifications, news_events, game_metrics, transactions, audit_logs and reports.
+
+Use server functions for sensitive operations.
+
+Implement transactions for voting, treasury changes, role changes and government formation.
+
+Use realtime subscriptions only where they provide meaningful value.
+
+Handle reconnects, duplicate requests, stale updates and partial failures.
+
+Use idempotency controls for critical operations.
+
+Never expose a Supabase service-role key in frontend code.
+
+Implement a safe development seed script and a separate production migration process.
+
+18. ADMINISTRATION AND MODERATION
+
+Create a protected admin dashboard with:
+
+Player management
+
+Party management
+
+Game-world configuration
+
+Election scheduling
+
+Election result verification
+
+Event publishing
+
+News corrections
+
+Content moderation
+
+User reports
+
+Game-rule configuration
+
+Database health indicators
+
+Audit history
+
+Development-only reset tools
+
+Use server-side permission checks. Hiding an admin button is not sufficient security.
+
+Log sensitive administrator actions.
+
+19. SECURITY AND FAIR PLAY
+
+Implement:
+
+Server-side authorization
+
+Row-level security
+
+Input validation
+
+Rate limiting
+
+Safe file uploads
+
+Protection against duplicate voting
+
+Protection against repeated rewards
+
+Transaction integrity
+
+Secret management
+
+Audit logs
+
+Moderation and appeals
+
+Backup and recovery documentation
+
+Do not use real payment collection in the first prototype.
+
+If premium features are added later, use a trusted payment provider and verified server-side payment callbacks.
+
+20. DOCKER AND DEVELOPMENT ENVIRONMENT
+
+Provide:
+
+Dockerfile
+
+docker-compose.yml
+
+.dockerignore
+
+.gitignore
+
+.env.example
+
+README.md
+
+Database migrations
+
+Seed data
+
+Automated test commands
+
+Document how to run the frontend, database tooling and optional services locally.
+
+Never commit real credentials.
+
+Make it possible to build the frontend reproducibly.
+
+Use a managed Supabase project for the simplest initial cloud deployment, or document an optional self-hosted architecture separately.
+
+21. RESPONSIVE DESIGN AND ANDROID
+
+Design every screen for desktop, tablet and mobile.
+
+Use responsive grids, accessible dialogs, touch-friendly controls, readable tables, compact navigation and mobile-friendly map interactions.
+
+Implement installable PWA behaviour where practical.
+
+Keep business logic independent of browser-only APIs.
+
+Prepare the application for Capacitor Android packaging.
+
+Preserve accounts, party membership, messages, election state and player progress across devices.
+
+Do not create a second, disconnected mobile database.
+
+22. TESTING
+
+Create automated tests for:
+
+Registration and authentication
+
+Party creation
+
+Party permissions
+
+Candidate nominations
+
+Election phases
+
+Duplicate vote prevention
+
+Vote counting
+
+Alliance seat calculations
+
+Government formation
+
+Floor-test deadlines
+
+Bill voting
+
+Treasury transactions
+
+Realtime updates
+
+Row-level security
+
+Reconnection
+
+Responsive navigation
+
+Admin permissions
+
+Include unit tests, integration tests and browser-level end-to-end tests.
+
+Use synthetic test data.
+
+Do not claim a feature is complete unless it works and has been tested.
+
+23. IMPLEMENTATION ORDER
+
+Phase 1: Design system, responsive navigation, authentication and player profiles.
+
+Phase 2: Database migrations, security rules, game-world state and synchronized player data.
+
+Phase 3: India map, constituencies, parties and membership.
+
+Phase 4: Elections, candidates, voting and results.
+
+Phase 5: Alliances, government formation, parliament and policies.
+
+Phase 6: DeshConnect, messaging, notifications and moderation.
+
+Phase 7: News events, admin tools and optional AI integration.
+
+Phase 8: Docker, deployment, automated tests and Android packaging.
+
+Keep the application runnable after every phase.
+
+24. REQUIRED DELIVERABLES
+
+Deliver:
+
+A complete working source-code repository.
+
+All required frontend pages and reusable components.
+
+Database schema and migration files.
+
+Row-level security policies.
+
+Backend functions.
+
+Docker configuration.
+
+Seed data for a clearly labelled demo world.
+
+Responsive desktop and mobile layouts.
+
+Environment variable documentation.
+
+Automated tests and test instructions.
+
+Deployment instructions.
+
+Android packaging instructions.
+
+A feature status report distinguishing implemented, tested, mocked and pending functionality.
+
+Do not stop after generating a landing page or static UI mockup.
+
+Do not replace working backend functionality with hardcoded arrays.
+
+If a third-party API is unavailable, implement a clear fallback and document the limitation.
+
+Start by creating the project structure and design system, then implement the first complete vertical slice: authentication → player profile → party creation → persistent database record → realtime visibility to other players.
+
+Only after that workflow is tested should you proceed to the election engine and other modules.
+
+10. Build it in stages without paying
+
+Trying to generate every feature at once usually creates many screens with incomplete backend connections. Use this checklist to keep the project manageable.
+
+Development tracker
+
+0/18 tasks
+
+Phase 1 — UI and identity
+
+Create the React project and GitHub repository
+
+Build the light-theme design system and responsive navigation
+
+Implement login, profile and demo mode
+
+Phase 2 — Real backend
+
+Set up Supabase Auth and PostgreSQL
+
+Create migrations and Row Level Security
+
+Make party creation persist and sync across accounts
+
+Phase 3 — Elections
+
+Implement constituencies and candidates
+
+Build election phases and server-side voting
+
+Calculate and publish validated results
+
+Phase 4 — Political world
+
+Implement alliances and government formation
+
+Build Parliament, bills and voting
+
+Add policy, budget and public satisfaction systems
+
+Phase 5 — Social and current events
+
+Build DeshConnect and persistent messages
+
+Add moderation and notifications
+
+Add sourced, dated and reviewed news events
+
+Phase 6 — Release
+
+Add Docker and automated tests
+
+Deploy frontend and connect production backend
+
+Test mobile layouts and package Android with Capacitor
+
+Reset checklistCopy roadmap
+
+11. Final recommendation
+
+Start with a working multiplayer web application, not a full 3D Godot game. The core of Election of India is persistent political relationships, elections, social interactions, Parliament and government management. Build those systems first, and use a polished interactive map to make the experience feel like a game.
+
+Your initial release should have these five complete features:
+
+Create an account and join a shared world.
+
+Create a party and invite other players.
+
+Publish posts and interact through DeshConnect.
+
+Run a complete simulated constituency election.
+
+Form a government and conduct a working floor test.
+
+Once these work across multiple accounts and devices, add national elections, the full Parliament, current-affairs events, richer map visualizations and Android packaging.
+
+The success criterion: two players on different devices should be able to create parties, see each other's actions, participate in the same election and observe the same government formation without refreshing or manually synchronizing anything.
