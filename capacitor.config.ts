@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.electionofindia.game',
-  appName: 'Election of India',
+  appId: 'com.kingmakerofindianpolitics.game',
+  appName: 'King Maker of Indian Politics',
   webDir: 'dist',
   server: {
     androidScheme: 'https'

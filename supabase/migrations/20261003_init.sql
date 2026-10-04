@@ -1,5 +1,5 @@
 -- ==============================================================================
--- ELECTION OF INDIA (BHARAT CHUNAV) - AUTHORITATIVE DATABASE SCHEMA
+-- KING MAKER OF INDIAN POLITICS - AUTHORITATIVE DATABASE SCHEMA
 -- PostgreSQL / Supabase Schema with Foreign Keys, Constraints & RLS
 -- ==============================================================================
 

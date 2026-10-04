@@ -15,6 +15,7 @@ dist-ssr
 .env.*
 !.env.example
 extracted_doc_media/
+*password*.txt
 
 # Editor directories and files
 .vscode/*

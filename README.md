@@ -1,14 +1,14 @@
-# Election of India (भारत चुनाव) 🇮🇳
+# King Maker of Indian Politics (भारत राजनीति का किंग मेकर) 🇮🇳
 
 > **Multiplayer Political Strategy, Democracy Simulation, and Nation Management Game**
 
-Built strictly following the **Election of India Complete Game Development Blueprint** (`Election of India.docx`).
+Built strictly following the **King Maker of Indian Politics Complete Game Development Blueprint** (`Election of India.docx`).
 
 ---
 
 ## 🏛️ Project Vision & Features
 
-*Election of India* is more than an election game—it is an interactive sovereign political simulation where players can start as grassroots citizens, found national or regional political parties, contest high-stakes elections, form alliances, lead coalitions as Chief Minister or Prime Minister, debate on the floor of Parliament, run public opinion polls on DeshConnect, and steer national economic policy.
+*King Maker of Indian Politics* is more than an election game—it is an interactive sovereign political simulation where players can start as grassroots citizens, found national or regional political parties, contest high-stakes elections, form alliances, lead coalitions as Chief Minister or Prime Minister, debate on the floor of Parliament, run public opinion polls on DeshConnect, and steer national economic policy.
 
 ### Core Modules Implemented
 
@@ -187,4 +187,4 @@ election-of-india/
 
 ---
 
-*Election of India 🇮🇳 — Sovereign Democratic Simulation.*
+*King Maker of Indian Politics 🇮🇳 — Sovereign Democratic Simulation.*

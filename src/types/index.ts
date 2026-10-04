@@ -1,5 +1,5 @@
 // ==============================================================================
-// ELECTION OF INDIA - CORE DOMAIN TYPES & SPECIFICATIONS
+// KING MAKER OF INDIAN POLITICS - CORE DOMAIN TYPES & SPECIFICATIONS
 // ==============================================================================
 
 export type UserRole = 'admin' | 'player';

@@ -1,5 +1,5 @@
 -- ==============================================================================
--- ELECTION OF INDIA - INITIAL SEED DATA
+-- KING MAKER OF INDIAN POLITICS - INITIAL SEED DATA
 -- Default Game World, States, Constituencies, Parties, and Current Affairs
 -- ==============================================================================
 

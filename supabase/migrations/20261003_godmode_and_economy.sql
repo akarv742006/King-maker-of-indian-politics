@@ -1,5 +1,5 @@
 -- ==============================================================================
--- ELECTION OF INDIA - GOD MODE, CAMPAIGN, PARTY HQ & ECONOMY SCHEMA MIGRATION
+-- KING MAKER OF INDIAN POLITICS - GOD MODE, CAMPAIGN, PARTY HQ & ECONOMY SCHEMA MIGRATION
 -- Migration: 20261003_godmode_and_economy.sql
 -- ==============================================================================
 

@@ -1,7 +1,7 @@
 {
-  "name": "election-of-india",
+  "name": "king-maker-of-indian-politics",
   "version": "1.0.0",
-  "description": "Election of India — Political Strategy & Democracy Simulation Game",
+  "description": "King Maker of Indian Politics — Political Strategy & Democracy Simulation Game",
   "type": "module",
   "scripts": {
     "dev": "vite",

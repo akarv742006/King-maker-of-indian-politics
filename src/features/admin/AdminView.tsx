@@ -136,7 +136,7 @@ export const AdminView: React.FC<AdminViewProps> = ({
               <span>NIRVACHAN SADAN · ECI CONTROL CENTER</span>
             </div>
             <h1 className="font-heading font-extrabold text-2xl sm:text-3xl tracking-tight text-white flex items-center gap-2.5">
-              <span>ELECTION OF INDIA</span>
+              <span>KING MAKER OF INDIAN POLITICS</span>
               <span className="text-sm font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded">
                 GOD MODE
               </span>

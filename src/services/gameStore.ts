@@ -178,7 +178,7 @@ export function useGameStore() {
   const [constituencies] = useState<ConstituencyInfo[]>(INITIAL_CONSTITUENCIES);
   const [userVotedElection, setUserVotedElection] = useState<boolean>(false);
   const [notifications, setNotifications] = useState<string[]>([
-    'Welcome to Election of India! Your Lok Sabha constituency is Varanasi.',
+    'Welcome to King Maker of Indian Politics! Your Lok Sabha constituency is Varanasi.',
     'Model code of conduct is active. Campaign headquarters unlocked.',
     'Election Commission of India control center online.'
   ]);
