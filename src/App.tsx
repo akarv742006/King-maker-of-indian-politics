@@ -17,16 +17,53 @@ import { NewsView } from './features/news/NewsView';
 import { MultiplayerView } from './features/multiplayer/MultiplayerView';
 import { ProfileView } from './features/profile/ProfileView';
 import { AdminView } from './features/admin/AdminView';
+import { LoginView } from './features/auth/LoginView';
 
 export function App() {
   const store = useGameStore();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    const saved = localStorage.getItem('king_politics_auth_v1');
+    return saved !== null ? JSON.parse(saved) : true;
+  });
 
   const handleNavigate = (tab: string) => {
     store.setActiveTab(tab);
     setMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const handleLoginSuccess = (role: 'player' | 'admin', username?: string) => {
+    setIsAuthenticated(true);
+    localStorage.setItem('king_politics_auth_v1', JSON.stringify(true));
+    store.setUserRole(role);
+    if (username) {
+      store.setProfile((prev) => ({
+        ...prev,
+        displayName: username,
+      }));
+    }
+    if (role === 'admin') {
+      store.setActiveTab('admin');
+    } else {
+      store.setActiveTab('dashboard');
+    }
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.setItem('king_politics_auth_v1', JSON.stringify(false));
+  };
+
+  // If not authenticated, show the Login View (Matching Design Card 1 & 10)
+  if (!isAuthenticated) {
+    return (
+      <LoginView
+        onLoginSuccess={handleLoginSuccess}
+        initialMode={store.userRole}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#F7F9FC] text-[#172033] flex flex-col">
@@ -39,6 +76,7 @@ export function App() {
         onToggleRole={store.setUserRole}
         onReset={store.resetGameData}
         onNavigateTab={handleNavigate}
+        onLogout={handleLogout}
       />
 
       {/* Main Layout Body */}

@@ -5,7 +5,8 @@ import {
   Clock,
   Sparkles,
   Shield,
-  RotateCcw
+  RotateCcw,
+  LogOut
 } from 'lucide-react';
 import { PlayerProfile, Election } from '../types';
 import { isSupabaseConfigured } from '../services/supabase';
@@ -18,6 +19,7 @@ interface HeaderProps {
   onToggleRole: (role: 'admin' | 'player') => void;
   onReset: () => void;
   onNavigateTab: (tab: string) => void;
+  onLogout?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -27,7 +29,8 @@ export const Header: React.FC<HeaderProps> = ({
   userRole,
   onToggleRole,
   onReset,
-  onNavigateTab
+  onNavigateTab,
+  onLogout
 }) => {
   const [showNotifications, setShowNotifications] = useState(false);
 
@@ -248,6 +251,18 @@ export const Header: React.FC<HeaderProps> = ({
                 <span>{profile.politicalXp} XP</span>
               </div>
             </div>
+
+            {/* Logout / Switch Account Button */}
+            {onLogout && (
+              <button
+                onClick={onLogout}
+                title="Switch Account / Log Out"
+                className="p-2 rounded-xl text-[#687386] hover:text-rose-600 hover:bg-rose-50 border border-[#E5EAF1] transition-all flex items-center gap-1.5 text-xs font-semibold cursor-pointer"
+              >
+                <LogOut className="w-4 h-4" />
+                <span className="hidden xl:inline">Switch</span>
+              </button>
+            )}
           </div>
         </div>
       </div>
