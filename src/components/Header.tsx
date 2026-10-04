@@ -86,28 +86,28 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-heading font-extrabold text-base sm:text-lg md:text-xl tracking-tight text-[#173B67]">
+                <span className="font-heading font-extrabold text-sm sm:text-base md:text-lg lg:text-xl tracking-tight text-[#173B67] truncate max-w-[200px] sm:max-w-none">
                   KING MAKER OF INDIAN POLITICS
                 </span>
                 {isSupabaseConfigured ? (
-                  <span className="hidden md:inline-flex text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-300 items-center gap-1">
+                  <span className="hidden sm:inline-flex text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-300 items-center gap-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                     SUPABASE CLOUD
                   </span>
                 ) : (
-                  <span className="hidden md:inline-flex text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300">
+                  <span className="hidden sm:inline-flex text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300">
                     LOCAL SIM
                   </span>
                 )}
               </div>
-              <p className="text-[11px] text-[#687386] font-medium leading-none hidden sm:block">
+              <p className="text-[11px] text-[#687386] font-medium leading-none hidden md:block">
                 Your Republic. Your Decisions.
               </p>
             </div>
           </div>
 
-          {/* Center: Live Election Phase Indicator */}
-          <div className="hidden lg:flex items-center gap-3 px-3 py-1.5 rounded-full bg-[#F7F9FC] border border-[#E5EAF1]">
+          {/* Center: Live Election Phase Indicator (visible on xl screens to prevent mobile wrap) */}
+          <div className="hidden xl:flex items-center gap-3 px-3 py-1.5 rounded-full bg-[#F7F9FC] border border-[#E5EAF1]">
             <div className="flex items-center gap-1.5 text-xs text-[#687386] font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-500 pulse-dot" />
               <span>Lok Sabha 2026:</span>

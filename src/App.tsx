@@ -23,8 +23,8 @@ export function App() {
   const store = useGameStore();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
-    const saved = localStorage.getItem('king_politics_auth_v1');
-    return saved !== null ? JSON.parse(saved) : true;
+    // Show login page first when opening or refreshing
+    return sessionStorage.getItem('king_politics_auth_v1') === 'true';
   });
 
   const handleNavigate = (tab: string) => {
@@ -35,7 +35,7 @@ export function App() {
 
   const handleLoginSuccess = (role: 'player' | 'admin', username?: string) => {
     setIsAuthenticated(true);
-    localStorage.setItem('king_politics_auth_v1', JSON.stringify(true));
+    sessionStorage.setItem('king_politics_auth_v1', 'true');
     store.setUserRole(role);
     if (username) {
       store.setProfile((prev) => ({
@@ -52,7 +52,8 @@ export function App() {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
-    localStorage.setItem('king_politics_auth_v1', JSON.stringify(false));
+    sessionStorage.removeItem('king_politics_auth_v1');
+    localStorage.removeItem('king_politics_auth_v1');
   };
 
   // If not authenticated, show the Login View (Matching Design Card 1 & 10)
